@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="14dp"
+                android:paddingStart="20dp"
+                style="@style/TEXT_COLOR"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <LinearLayout
+                    android:id="@+id/btnEditProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    style="@style/SENSOR_CONTAINER">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/profile"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="EDIT PROFILE"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    style="@style/SENSOR_CONTAINER">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        tools:ignore="NestedWeights">
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/changeModeSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:scaleY="1.5"
+                            android:scaleX="1.5"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="DARK MODE"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnPrivacyPolicy"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="14dp"
+                android:text="PRIVACY &amp;  POLICY"
+                android:textStyle="bold"
+                android:layout_marginBottom="14dp"
+                android:textSize="20sp"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:gravity="left|center"
+                android:backgroundTint="#0074F0"
+                style="@style/PRIVACY_POLICY_BTN"/>
+
+            <Button
+                android:id="@+id/btnTermsConditions"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:text="TERMS &amp; CONDITIONS"
+                android:textStyle="bold"
+                android:layout_marginBottom="14dp"
+                android:textSize="20sp"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:gravity="left|center"
+                android:backgroundTint="#0074F0"
+                style="@style/TERMS_CONDITIONS_BTN"/>
+
+            <Button
+                android:id="@+id/btnAboutUs"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:text=" ABOUT US"
+                android:textStyle="bold"
+                android:layout_marginBottom="14dp"
+                android:textSize="20sp"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:gravity="left|center"
+                android:backgroundTint="#0074F0"
+                style="@style/ABOUT_US_BTN"/>
+
+            <Button
+                android:id="@+id/btnFAQ"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:text="FAQ"
+                android:textStyle="bold"
+                android:layout_marginBottom="14dp"
+                android:textSize="20sp"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:gravity="left|center"
+                android:backgroundTint="#0074F0"
+                style="@style/FAQ_BTN"/>
+
+            <Button
+                android:id="@+id/btnLogOut"
+                android:layout_marginTop="60dp"
+                android:layout_width="260dp"
+                android:layout_height="60sp"
+                android:gravity="center"
+                android:text="Log Out"
+                android:textSize="25sp"
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="#FF0000"
+                style="@style/TEXT_COLOR"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
